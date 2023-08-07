@@ -1,4 +1,3 @@
-import { RedisService } from './../redis/redis.service';
 import {
   HttpException,
   HttpStatus,
@@ -13,6 +12,7 @@ import { RegisterUserDto } from './dto/register-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './entities/user.entity';
 import { md5 } from 'src/utils';
+import { RedisService } from 'src/redis/redis.service';
 
 @Injectable()
 export class UserService {
